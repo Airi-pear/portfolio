@@ -1,0 +1,352 @@
+@charset "utf-8";
+*,
+::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;  
+scroll-padding-top:80px;
+}
+body {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  background-color: #f4f1ea;
+  background-image: url(img/haikei.png);
+}
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 75%;
+  margin-right: 3rem;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  line-height: 80px;
+  vertical-align: bottom;
+}
+h1{
+  height: 80px;
+  width:auto;
+  padding:10px 0 0 10px;
+}
+h1 img{
+  height: 100%;
+width: auto;
+}
+main {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgba(0,0,0,1.00);
+}
+a:hover {
+  text-decoration: underline;
+  color: rgba(0,0,0,1.00);
+}
+
+
+
+
+header {
+  background-color: rgba(255,255,255,1.00);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+header .flexbox {
+  height: auto;
+}
+footer {
+  text-align: center;
+  background-color: rgba(255,255,255,1.00);
+  margin-top: 5rem;
+  font-size: 16px;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+footer ul   {
+  list-style-type: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.main_img img {
+  width: 100%;
+  height: auto;
+  min-width: 900px;
+  max-width: 1440px;
+}
+.main_img {
+  height: auto;
+  width: 100%;
+  margin: 80px auto;
+}
+.jigyo {
+  width: 60%;
+}
+.news {
+  width: 30%;
+  font-size: 16px;
+  line-height: 45px;
+}
+#to_page2 {
+  background-image: url(img/125_arr_hoso.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  padding-right: 25px;
+}
+
+#flexaccess {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+.access {
+  width: 50%;
+}
+.access p iframe {
+  width: 100%;
+  display: block;
+  height: auto;
+  aspect-ratio: 545/325;
+}
+
+.googlemap   {
+  width: 80%;
+  
+
+}
+.access .text {
+  margin-top: 3rem;
+  font-size: 16px;
+}
+
+
+
+
+.jigyo dl dt {
+  font-weight: bold;
+}
+h2 {
+  margin-bottom: 20px;
+  border-left: 5px solid #c2c2c2;
+  padding-left: 10px;
+  font-size: 22px;
+}
+.gaiyo {
+  width: 100%;
+  margin: 70px auto 0;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.70);
+}
+.gaiyo h2 {
+  border: none;
+  text-align: center
+}
+.gaiyo table {
+  width: 100%;
+  line-height: 1.9;
+}
+tbody tr th {
+  text-align: left;
+  width: 25%;
+  vertical-align: top;
+}
+
+
+
+.news dl dt {
+  font-weight: normal;
+  width: 30%;
+  padding-right: 20px;
+  float: left;
+  display: block;
+}
+.news dl dd {
+  width: 70%;
+  float: left;
+  display: block;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
+
+.aisatsu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 74%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.img_kaigi {
+  width: 50%;
+  height: auto;
+}
+.img_kaigi img{
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+}
+
+h3 {
+  font-size: 20px;
+}
+.recruit_img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 7rem;
+}
+.recruit_img img {
+  width: 100%;
+  height: auto;
+}
+
+.recruit_img p {
+  bottom: 0px;
+  left: 10%;
+  position: absolute;
+  color: rgba(255,255,255,1.00);
+  font-size: 5rem;
+  font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, sans-serif;
+}
+#RECRUIT .table_recruit {
+  width: 90%;
+  line-height: 2.4;
+  margin: 0 auto 50px;
+  font-size: 16px;
+}
+#RECRUIT .table_recruit th {
+  width: 30%;
+  text-align: left;
+  padding:10px 20px;
+}
+#RECRUIT .table_recruit td {
+  padding:10px 20px;
+  line-height: 2;
+}
+
+#RECRUIT .table_recruit tr:nth-child(odd) {
+  background-color: rgba(255,255,255,1.00);
+}
+
+#RECRUIT .table_recruit tr:nth-child(even)  {
+  background-color: #ECE8DE;
+}
+
+#RECRUIT .text {
+  width: 70%;
+  height: auto;
+  font-size: 16px;
+  display: block;
+}
+#RECRUIT .box      {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+#RECRUIT .introduction {
+  width: 100%;
+}
+#RECRUIT .introduction figure {
+  width: 22%;
+  height: auto;
+  text-align: left;
+  padding-top: 5rem;
+}
+
+#RECRUIT .introduction figure img {
+  width: 100%;
+  height: auto;
+  min-width: 200px;
+}
+.introduction .box-area .box:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+#RECRUIT em{
+  text-align: center;
+}
+.introduction .box {
+  padding-bottom: 60px;
+}
+.table_contact {
+width:750px;
+margin: 0 auto 50px;
+}
+
+#textfield,#textfield2,#textarea{
+  width: 100%;
+  background-color: rgba(207,207,207,1.00);
+  border: none;
+}
+#textfield,#textfield2{
+  height: 30px;
+}
+#textarea{height: 200px;}
+
+
+
+.contact h2{
+margin: 0 auto;
+  width:150px;
+  display: block;
+}
+#submit{
+  width: 250px;
+  padding: 15px;
+  background-color: #e8c14a;
+  border-radius: 25px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+.tel {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}

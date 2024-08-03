@@ -1,0 +1,558 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top:60px;
+    
+}
+
+
+img {
+    vertical-align: bottom
+}
+body {
+   font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.9;
+  box-sizing: border-box;
+  background-image: url(img/haikei3.png);
+  cursor: url("img/icon-carsol.cur"), default;
+}
+
+main {
+  width: 90%;
+  max-width: 1150px;
+  padding: 80px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255,255,255,0.87);
+}
+h1 {
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0px 30px;
+}
+h1 a .flex {
+	display: flex;
+	align-items: center;
+}
+
+h2 {
+  font-weight: nomal;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(181,241,133,1.0);
+  display: inline-block;
+  padding:3px 20px;
+  border-width: 0px;
+  border-style: solid;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 22px;
+  margin:20px 0px; 
+}
+.h2{
+  text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+	margin-bottom: 30px;
+	position: relative;
+	display: inline-block;
+	padding: 0 55px;
+}
+/*h３装飾*/
+
+h3:before, h3:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+h3:before {
+  left:0;
+}
+h3:after {
+  right: 0;
+}
+h4{
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+}
+
+header{
+  width:100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.89);
+  box-shadow: 0px 2px 5px rgba(147,147,147,0.54);
+}
+
+nav {
+margin-right: 30px;
+}
+header nav ul {
+    display: flex;
+    font-size: 20px;
+    line-height: 1;
+}
+nav li a {
+    padding: 0 20px;
+   color: #000000;
+    text-decoration: none;
+}
+nav li::after {
+    content: "|";
+}
+nav li:last-child::after {
+    content: none;
+}
+nav li {
+  position: relative;
+}
+
+ul {
+    list-style-type: none;
+}
+.nav-button span {
+  height: 3px; 
+  background-color: rgba(116,116,116,1.00);
+  position: absolute;
+  right: 10px;
+  transition: 0.5s;
+  
+}
+.nav-button {
+	width: 40px;
+	height: 40px;
+	margin-left: auto;
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+	visibility: hidden;
+	opacity: 0;
+	background-color: rgba(255,255,255,1.00);
+}
+
+.nav-button span:nth-child(1) {
+  width:35px;
+  top: 12px;
+}
+.nav-button span:nth-child(2) {
+  width:44px;
+  top: 23px;
+}
+.nav-button span:nth-child(3) {
+  width:30px;
+  top: 34px;
+}
+
+.top_img {
+  width:30%;
+  max-width: 350px;
+  margin-top:40px;
+
+}
+.top_img img{
+  width: 100%;
+  height: auto;
+  border-radius: 33px;
+  border-width: 0px;
+  border-style: solid;
+  box-shadow: 15px 15px #B5F185;
+}
+.sec_profile {
+  width:100%;
+}
+.profile1,.profile2{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+.plo1_text{
+  width: 50%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.profile2 div{
+  width: 30%;
+}
+
+
+
+ .sec_port ul {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.sec_port li{
+	margin-bottom: 50px;
+	overflow: hidden;
+	border-radius: 10px;
+	width: 350px;
+}
+.sec_port li img{
+  width: 100%;
+  height: auto;
+}
+
+.sec_port{
+    text-align: center;
+}
+.diary{
+  overflow-y: auto;
+  height: 300px;
+  padding: 30px 50px;
+  background-color: rgba(133,179,241,0.36);
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.diary dd{
+  margin-bottom: 1em;
+}
+.sec_contact{
+  text-align: center;
+  margin: 50px;
+}
+.view{
+	text-align: right;
+	font-size: 22px;
+	margin-top: -30px;
+}
+.view a{
+	color: rgba(0,0,0,1.00);
+	padding:10px 20px;
+	display: inline-block;
+	font-size: 20px;
+	margin-right: 70px;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: 0.4s;
+	border: 2px solid  rgba(181,241,133,1.0);
+}
+h1 a figure {
+	width: 40px;
+	padding-right: 10px;
+}
+h1 a figure img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+.view a:hover{
+ background-color: #C6C6C6;
+  color:  rgba(181,241,133,1.0);
+}
+nav a:hover{
+    color:  rgba(181,241,133,1.0);
+    transition: 0.3s;
+
+
+}
+ nav a:hover::before {
+  content: "";
+  width: 100%;
+
+}
+nav a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgba(96,96,96,0.50);
+  position: absolute;
+  left:0;
+  bottom: -10px;
+transition: 0.5s;
+}
+.sec_port img{
+    border-radius: 15px;
+}
+.sec_port img:hover{
+    transition: 0.5s;
+   /* box-shadow: 6px 6px 5px #8E8E8E;*/
+  transform: scale(1.04);
+
+}
+
+
+
+.pagetop{
+  background-color: rgba(181,241,133,1.0);
+  border-radius: 50% 30% 30% 60%;
+  padding: 30px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  display: none;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.pagetop:hover{
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+footer{
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(255,255,255,1.00);
+}
+h1 a,.pagetop{
+   color: #000000;
+    text-decoration: none;
+}
+
+/*ここからSUBページ*/
+#sub .works_img,.works_img_x,.works_img_y {
+    display: block;
+  margin:10px auto;
+    
+}
+#sub dl {
+  margin: 30px 30px 0;
+     display: flex;
+  flex-wrap: wrap;
+}
+#sub dl dt{
+    width: 20%;
+    text-align: left;
+    padding-left: 1.3em;
+    background-image: url(img/paw-solid.svg);
+    background-repeat: no-repeat;
+    background-position: left 5px;
+    background-size: 1.2em 1.2em;
+}
+
+#sub dl dd{
+     width: 75%;
+  margin-bottom:5px;
+    text-align: left;
+}
+.works_img{
+    width:300px;
+}
+.works_img_x{
+    width:500px;
+}
+.works_img_y{
+    width:350px;
+}
+#sub p img{
+    width:100%;
+    height: auto;
+}
+#sub .pagelink {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+#sub .pagelink a{
+  text-decoration: none;
+  padding-left: 25px;
+  background-image: url(img/125_arr_hoso.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+}
+#sub .pagelink a:hover{
+    color: #000;
+    transition: 0.3s;
+  text-decoration: underline;
+
+}
+#sub main{
+    background-color: rgba(0,0,0,0.00);
+}
+#sub h2{
+    background-color: rgba(240,240,240,1.00);
+    border: 2px solid rgba(181,241,133,1.00);
+}
+#sub .aisatsu {
+	text-align: center;
+margin:30px 0 30px;
+}
+.profile1 .plo1_text p {
+	text-align: left;
+}
+
+
+#sub .box{
+	margin-bottom: 60px;
+	position: relative;
+	padding: 30px;
+	border-top: solid 2px #969494;
+	border-bottom: solid 2px #969494;
+	text-align: center;
+	background-color: rgba(255,255,255,0.83);
+}
+.box:before, .box:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: calc(100% + 20px);
+    background-color: #969494;
+}
+.box::before {left: 10px;}
+.box::after {right: 10px;}
+
+
+
+/*フェードイン*/
+.inview{
+  opacity: 0;
+  transform:translateY(100px);
+  transition: 0.8s;
+}
+.inview.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
+.profile2 div figure {
+	max-width: 200px;
+	margin: 30px auto;
+
+}
+#illust{
+	margin-top:10px;
+}
+.profile2 div figure img {
+	width: 100%;
+	height: auto;
+	
+}
+
+
+
+
+@media (max-width:900px){
+main{
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 0;
+  }
+.top_img {
+  width:90%;
+  min-width: 200px;
+  margin:80px auto 0;
+
+}
+
+  .profile1,.profile2{
+  display: block;
+    text-align: center;
+}
+  .plo1_text{
+  width: 100%;
+  margin-top: 30px;
+  font-size: 16px;
+}
+.profile2 div{
+  width: 90%;
+  margin: 0 auto;
+}
+  
+nav {
+  width: 80%;
+  position: fixed;
+  top: 0;
+  height: 50vh;
+  background-color: rgba(255,255,255,1.00); 
+  padding-top: 60px;
+left:100%;
+  transition: 0.5s;
+}
+  .nav-open nav{
+    left:20%;
+  }
+header nav ul {
+flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ font-size: 30px;
+  height: 100%;
+  padding-bottom: 80px;
+  background-color: rgba(255,255,255,1.00);
+  overflow: auto;
+ 
+}
+nav li a {
+    padding: 30px;
+   color: #000000;
+}
+nav li::after {
+    content: none;
+}
+  .nav-button{
+    visibility: visible;
+    opacity: 1;
+
+  }
+
+
+}
+
+@media (max-width:600px){
+ #pagetop
+  {
+  opacity: 0;
+    visibility: hidden;
+}
+.works_img_x {
+  width: 100%;
+}
+#sub dl {
+  margin: 0;
+     display: block;
+  text-align: center;
+}
+#sub dl dt{
+  width: 20%;
+  padding-left: 1.3em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#sub dl dd{
+     width: 100%;
+  margin-bottom:5px;
+    text-align: center;
+}
+  #sub dl dd:last-of-type{
+       text-align: left;
+  }
+	.view{
+	text-align: center;
+	margin-top: 0px;
+}
+	.view a{
+				padding: 20px 40px;
+		margin-right: 0;
+	}
+	.sec_port ul:last-of-type{
+
+    margin-bottom: 0px;
+}
+  
+}
