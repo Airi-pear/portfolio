@@ -14,22 +14,22 @@ img {
     vertical-align: bottom
 }
 body {
-   font-family: "Zen Maru Gothic", serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.9;
-  box-sizing: border-box;
-  background-image: url(img/haikei3.png);
-  cursor: url("img/icon-carsol.cur"), default;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.9;
+    box-sizing: border-box;
+    background-image: url(img/haikei4.jpg);
+    background-size: 100px 100px;
 }
 
 main {
-  width: 90%;
-  max-width: 1150px;
-  padding: 80px 20px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(255,255,255,0.87);
+    width: 90%;
+    max-width: 1150px;
+    padding: 80px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E4EBF2;
 }
 h1 {
 	font-size: 20px;
@@ -45,7 +45,8 @@ h2 {
   font-weight: nomal;
   font-size: 20px;
   text-align: center;
-  background-color: rgba(181,241,133,1.0);
+  background-color: #3E6E8C;
+    color: rgba(255,255,255,1.00);
   display: inline-block;
   padding:3px 20px;
   border-width: 0px;
@@ -74,8 +75,8 @@ h3:before, h3:after {
   display: inline-block;
   width: 45px;
   height: 2px;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
+  border-top: solid 1px #F2C2C2;
+  border-bottom: solid 1px #F2C2C2;
 }
 h3:before {
   left:0;
@@ -100,7 +101,6 @@ header{
   top: 0;
   left: 0;
   background-color: rgba(255,255,255,0.89);
-  box-shadow: 0px 2px 5px rgba(147,147,147,0.54);
 }
 
 nav {
@@ -161,6 +161,19 @@ ul {
   width:30px;
   top: 34px;
 }
+.nav-open .nav-button span:nth-child(1) {
+  top: 17px;
+  transform: rotate(315deg)
+}
+.nav-open .nav-button span:nth-child(2) {
+  width:0;
+  left:50%;
+}
+.nav-open .nav-button span:nth-child(3) {
+  top: 17px;
+	width:35px;
+  transform:rotate(-315deg)
+}
 
 .top_img {
   width:30%;
@@ -172,9 +185,7 @@ ul {
   width: 100%;
   height: auto;
   border-radius: 33px;
-  border-width: 0px;
-  border-style: solid;
-  box-shadow: 15px 15px #B5F185;
+
 }
 .sec_profile {
   width:100%;
@@ -247,7 +258,7 @@ ul {
 	text-decoration: none;
 	border-radius: 30px;
 	transition: 0.4s;
-	border: 2px solid  rgba(181,241,133,1.0);
+	border: 2px solid  #3E6E8C;
 }
 h1 a figure {
 	width: 40px;
@@ -263,10 +274,10 @@ h1 a figure img {
 
 .view a:hover{
  background-color: #C6C6C6;
-  color:  rgba(181,241,133,1.0);
+  color:  #3E6E8C;
 }
 nav a:hover{
-    color:  rgba(181,241,133,1.0);
+    color:  #3E6E8C;
     transition: 0.3s;
 
 
@@ -280,7 +291,7 @@ nav a::before {
   content: "";
   width: 0;
   height: 2px;
-  background-color: rgba(96,96,96,0.50);
+  background-color: #F2C2C2;
   position: absolute;
   left:0;
   bottom: -10px;
@@ -299,7 +310,7 @@ transition: 0.5s;
 
 
 .pagetop{
-  background-color: rgba(181,241,133,1.0);
+  background-color: #F2C2C2;
   border-radius: 50% 30% 30% 60%;
   padding: 30px;
   position: fixed;
@@ -308,6 +319,8 @@ transition: 0.5s;
   display: none;
   opacity: 0.8;
   transition: 0.5s;
+       color: #fff;
+    text-decoration: none;
 }
 .pagetop:hover{
   opacity: 1;
@@ -318,7 +331,7 @@ footer{
   padding: 50px;
   background-color: rgba(255,255,255,1.00);
 }
-h1 a,.pagetop{
+h1 a{
    color: #000000;
     text-decoration: none;
 }
@@ -338,7 +351,7 @@ h1 a,.pagetop{
     width: 20%;
     text-align: left;
     padding-left: 1.3em;
-    background-image: url(img/paw-solid.svg);
+    background-image: url("img/pow-solid2.svg");
     background-repeat: no-repeat;
     background-position: left 5px;
     background-size: 1.2em 1.2em;
@@ -381,13 +394,7 @@ h1 a,.pagetop{
   text-decoration: underline;
 
 }
-#sub main{
-    background-color: rgba(0,0,0,0.00);
-}
-#sub h2{
-    background-color: rgba(240,240,240,1.00);
-    border: 2px solid rgba(181,241,133,1.00);
-}
+
 #sub .aisatsu {
 	text-align: center;
 margin:30px 0 30px;
@@ -453,10 +460,12 @@ main{
 	padding-bottom: 0;
   }
 .top_img {
-  width:90%;
-  min-width: 200px;
-  margin:80px auto 0;
-
+    width: 90%;
+    min-width: 200px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
 }
 
   .profile1,.profile2{
@@ -474,27 +483,28 @@ main{
 }
   
 nav {
-  width: 80%;
+  width: 65%;
   position: fixed;
   top: 0;
-  height: 50vh;
+  height: 40vh;
   background-color: rgba(255,255,255,1.00); 
   padding-top: 60px;
 left:100%;
   transition: 0.5s;
 }
   .nav-open nav{
-    left:20%;
+    left:35%;
   }
 header nav ul {
 flex-direction: column;
   justify-content: space-around;
   align-items: center;
- font-size: 30px;
+ font-size: 25px;
   height: 100%;
-  padding-bottom: 80px;
   background-color: rgba(255,255,255,1.00);
   overflow: auto;
+     padding-bottom: 10px;
+		border-bottom-left-radius:  30px;
  
 }
 nav li a {
@@ -509,6 +519,9 @@ nav li::after {
     opacity: 1;
 
   }
+.view {
+    padding-bottom: 30px;
+}
 
 
 }
