@@ -160,7 +160,6 @@ ul {
 .nav-open .nav-button span:nth-child(1) {
   top: 17px;
   transform: rotate(315deg);
-	      right: -30px;
 }
 .nav-open .nav-button span:nth-child(2) {
   width: 0;
@@ -169,7 +168,6 @@ ul {
 .nav-open .nav-button span:nth-child(3) {
   top: 17px;
   width: 35px;
-	    right: -30px;
   transform: rotate(-315deg);
 }
 
@@ -474,8 +472,9 @@ Resources /*ここからSUBページ*/
   text-decoration: underline;
 }
 #sub .aisatsu {
-  text-align: center;
-  margin: 30px 0 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .profile1 .plo1_text p {
   text-align: left;
@@ -545,6 +544,9 @@ h3 span {
 .animation {
   animation: floating-y 0.8s ease-in-out infinite alternate-reverse;
 }
+main .aisatsu span {
+    white-space: nowrap;
+}
 @keyframes floating-y {
   0% {
     transform: translateY(-2%);
@@ -594,6 +596,10 @@ h3 span {
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
   }
+    .nav-open .nav-button{
+  right: -30px;
+        
+    }
   .nav-open nav {
 	  
   right: 0;
