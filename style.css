@@ -24,7 +24,7 @@ main {
   padding: 80px 20px;
   margin-left: auto;
   margin-right: auto;
-  /* [disabled]background-color: #E4EBF2; */
+
 }
 h1 {
   font-size: 20px;
@@ -96,15 +96,14 @@ nav {
   margin-right: 30px;
 }
 .tools {
-	text-align: center;
-	background-color: rgba(255,255,255,0.64);
-	border-radius: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.64);
+  border-radius: 20px;
 }
 .profile2 div p {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
+  height: 130px;
 }
-
-
 header nav ul {
   display: flex;
   font-size: 20px;
@@ -170,7 +169,6 @@ ul {
   width: 35px;
   transform: rotate(-315deg);
 }
-
 .top_img {
   width: 30%;
   max-width: 350px;
@@ -189,7 +187,7 @@ ul {
   justify-content: space-around;
   margin-bottom: 60px;
 }
-.plo1_text {
+.pro1_text {
   width: 50%;
   margin-top: 50px;
   text-align: center;
@@ -197,6 +195,7 @@ ul {
 }
 .profile2 div {
   width: 30%;
+  position: relative;
 }
 .sec_port ul {
   padding-top: 30px;
@@ -472,11 +471,11 @@ Resources /*ここからSUBページ*/
   text-decoration: underline;
 }
 #sub .aisatsu {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.profile1 .plo1_text p {
+.profile1 .pro1_text p {
   text-align: left;
 }
 #sub .box {
@@ -531,21 +530,19 @@ h3 span {
   white-space: nowrap;
 }
 .profile2 {
-	position: relative;
+  position: relative;
 }
-
-.animation{
+.animation {
   display: block;
   max-width: 350px;
   width: 70%;
   height: auto;
 }
-
 .animation {
   animation: floating-y 0.8s ease-in-out infinite alternate-reverse;
 }
-main .aisatsu span {
-    white-space: nowrap;
+main .aisatsu span, .pro1_text span {
+  white-space: nowrap;
 }
 @keyframes floating-y {
   0% {
@@ -555,7 +552,6 @@ main .aisatsu span {
     transform: translateY(2%);
   }
 }
-
 @media (max-width:900px) {
   main {
     padding-right: 20px;
@@ -574,7 +570,7 @@ main .aisatsu span {
     display: block;
     text-align: center;
   }
-  .plo1_text {
+  .pro1_text {
     width: 100%;
     margin-top: 30px;
     font-size: 16px;
@@ -584,25 +580,23 @@ main .aisatsu span {
     margin: 0 auto;
   }
   nav {
-	width: 250px;
-	position: fixed;
-	top: 0;
-	  right: -1000px;
-	      margin-right: 0px;
-	height: 40vh;
-	background-color: rgba(255, 255, 255, 1.00);
-	padding-top: 60px;
-	transition: 0.5s;
-	border-top-left-radius: 30px;
-	border-bottom-left-radius: 30px;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    margin-right: 0px;
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 1.00);
+    padding-top: 60px;
+    transition: 0.5s;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
-    .nav-open .nav-button{
-  right: -30px;
-        
-    }
+  .nav-open .nav-button {
+    right: -30px;
+  }
   .nav-open nav {
-	  
-  right: 0;
+    right: 0;
   }
   header nav ul {
     flex-direction: column;
@@ -630,11 +624,17 @@ main .aisatsu span {
   .view {
     padding-bottom: 30px;
   }
-.works_img_x {
-	width: 100%;
+  .works_img_x {
+    width: 100%;
+  }
+  .profile2 div p {
+    height: auto;
+  }
+  .tools {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
-}
-
 @media (max-width:600px) {
   #pagetop {
     opacity: 0;
@@ -644,7 +644,7 @@ main .aisatsu span {
     width: 100%;
   }
   .works_img {
-	width: 80%;
+    width: 80%;
   }
   #sub dl {
     margin: 0;
@@ -677,6 +677,6 @@ main .aisatsu span {
     margin-bottom: 0px;
   }
   .works_img_y {
-	width: 65%;
+    width: 65%;
   }
 }
