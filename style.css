@@ -18,7 +18,8 @@ body {
   box-sizing: border-box;
   background-color: #E4EBF2;
 }
-main {
+main 
+{
   width: 90%;
   max-width: 1150px;
   padding: 80px 20px;
@@ -173,6 +174,8 @@ ul {
   width: 30%;
   max-width: 350px;
   margin-top: 40px;
+	    display: flex;
+    align-items: center;
 }
 .top_img img {
   width: 100%;
@@ -544,6 +547,27 @@ h3 span {
 main .aisatsu span, .pro1_text span {
   white-space: nowrap;
 }
+.video   {
+	width:80%;
+	max-width: 700px;
+	aspect-ratio:16 / 9 ;
+	margin: 80px auto;
+}
+div iframe {
+    display: block;
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 30px;
+}
+main .video p {
+	text-align: center;
+}
+
+
 @keyframes floating-y {
   0% {
     transform: translateY(-2%);
@@ -634,6 +658,9 @@ main .aisatsu span, .pro1_text span {
     width: 50%;
     margin: 0 auto;
   }
+	div iframe{
+		padding: 20px;
+	}
 }
 @media (max-width:600px) {
   #pagetop {
@@ -679,4 +706,8 @@ main .aisatsu span, .pro1_text span {
   .works_img_y {
     width: 65%;
   }
+	.video{
+		width:95%;
+	}
+	
 }
