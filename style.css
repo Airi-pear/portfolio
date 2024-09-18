@@ -566,6 +566,11 @@ div iframe {
 main .video p {
 	text-align: center;
 }
+main .to-site a {
+	text-decoration: none;
+	font-size: 18px;
+}
+
 
 
 @keyframes floating-y {
