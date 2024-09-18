@@ -440,7 +440,7 @@ Resources /*ここからSUBページ*/
   text-align: left;
 }
 .works_img {
-  width: 300px;
+  width: 350px;
   margin: 10px auto;
 }
 .works_img_x {
@@ -649,7 +649,7 @@ main .video p {
     padding-bottom: 30px;
   }
   .works_img_x {
-    width: 100%;
+    width: 70%;
   }
   .profile2 div p {
     height: auto;
@@ -671,7 +671,7 @@ main .video p {
     width: 100%;
   }
   .works_img {
-    width: 80%;
+    width: 90%;
   }
   #sub dl {
     margin: 0;
